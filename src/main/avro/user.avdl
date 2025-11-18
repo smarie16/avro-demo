@@ -1,0 +1,40 @@
+@namespace("com.decathlon.finance.avrodemo.model")
+protocol UserProtocol {
+
+  /** Représente un utilisateur du système */
+  record User {
+    /** Identifiant unique de l'utilisateur */
+    string id;
+
+    /** Prénom de l'utilisateur */
+    string firstName;
+
+    /** Nom de famille de l'utilisateur */
+    string lastName;
+
+    /** Adresse email de l'utilisateur */
+    string email;
+
+    /** Timestamp de création (optionnel) */
+    union { null, long } createdAt = null;
+
+    /** Statut actif de l'utilisateur */
+    boolean active = true;
+  }
+
+  /** Représente une adresse */
+  record Address {
+    /** Rue */
+    string street;
+
+    /** Ville */
+    string city;
+
+    /** Code postal */
+    string zipCode;
+
+    /** Pays */
+    string country;
+  }
+}
+
