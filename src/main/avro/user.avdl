@@ -20,6 +20,8 @@ protocol UserProtocol {
 
     /** Statut actif de l'utilisateur */
     boolean active = true;
+
+	Address address;
   }
 
   /** Représente une adresse */
