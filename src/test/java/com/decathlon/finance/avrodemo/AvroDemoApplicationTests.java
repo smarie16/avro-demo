@@ -17,7 +17,7 @@ class AvroDemoApplicationTests {
 
     @Test
     void generateUserAvsc() throws IOException {
-        generateAvsc(User.SCHEMA$.toString(), "target/avsc/user.avsc");
+        generateAvsc(User.SCHEMA$.toString(), "target/user.avsc");
     }
 
 
