@@ -1,0 +1,1 @@
+avrotize a2java ./../../../target/avsc/user.avsc --out ./../../../target/my-generated-class --jackson-annotation
